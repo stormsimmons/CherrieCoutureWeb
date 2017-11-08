@@ -14069,11 +14069,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\storm.simmons\\Documents\\PersonalWorkpace\\CherrieCoutureWeb\\CherrieCoutureWeb\\CherrieCoutureWeb.csproj",
+      "projectUniqueName": "C:\\Users\\storm.simmons\\Documents\\Personal GitHub\\CherrieCoutureWeb\\Source\\CherrieCoutureWeb\\CherrieCoutureWeb.csproj",
       "projectName": "CherrieCoutureWeb",
-      "projectPath": "C:\\Users\\storm.simmons\\Documents\\PersonalWorkpace\\CherrieCoutureWeb\\CherrieCoutureWeb\\CherrieCoutureWeb.csproj",
+      "projectPath": "C:\\Users\\storm.simmons\\Documents\\Personal GitHub\\CherrieCoutureWeb\\Source\\CherrieCoutureWeb\\CherrieCoutureWeb.csproj",
       "packagesPath": "C:\\Users\\storm.simmons\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\storm.simmons\\Documents\\PersonalWorkpace\\CherrieCoutureWeb\\CherrieCoutureWeb\\obj\\",
+      "outputPath": "C:\\Users\\storm.simmons\\Documents\\Personal GitHub\\CherrieCoutureWeb\\Source\\CherrieCoutureWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
