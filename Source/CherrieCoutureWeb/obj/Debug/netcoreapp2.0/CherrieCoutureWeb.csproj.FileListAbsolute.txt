@@ -1,0 +1,11 @@
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.deps.json
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.runtimeconfig.json
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.runtimeconfig.dev.json
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.dll
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.pdb
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.csprojResolveAssemblyReference.cache
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.csproj.CoreCompileInputs.cache
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.AssemblyInfoInputs.cache
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.AssemblyInfo.cs
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.dll
+c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.pdb

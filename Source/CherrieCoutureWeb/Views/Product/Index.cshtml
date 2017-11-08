@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+@model List<CherrieCoutureWeb.Models.Product.Product>
+
+
+@if (User.IsInRole("Admin"))
+{
+    <a asp-area="" asp-controller="Product" asp-action="Create">Add new Product</a>
+}
+<div class="container">
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">@product.Name</div>
+                    <div class="panel-body">
+                        @if (product.ImageUrl == null)
+                        {
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+}
+                        else
+                        {
+                            <img src="~/images/products/@product.ImageUrl" class="img-responsive" style="width:100%" alt="Image">
+                        }
+                    </div>
+                    <div class="panel-footer">
+                        @product.Description<br>
+                        Category: @product.Category<br>
+                        Price: @product.Price.ToString("R0.00")<br>
+                        Size : @product.Size<br>
+                        <input type="button" value="Add to cart" class="btn btn-success">
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <input type="button" value="Delete" class="btn btn-success" onclick="location.href='@Url.Action("Delete", "Product", new { id = product.Id })'">
+                            <input type="button" value="Update" class="btn btn-success" onclick="location.href='@Url.Action("Update", "Product", new { id = product.Id })'">
+}
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

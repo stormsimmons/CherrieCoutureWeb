@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+@model CherrieCoutureWeb.Models.Login.RegisterUserViewModel;
+
+<link rel="stylesheet" href="~/css/loginStyles.css" />
+
+<h2>Register</h2>
+
+<div class="wrapper">
+    <form class="form-signin" method="post">
+        <h2 class="form-signin-heading">Register</h2>
+        <input asp-for="FirstName" type="text" class="form-control" name="firstname" placeholder="FirstName" required="" autofocus="" />
+        <input asp-for="LastName" type="text" class="form-control" name="lastname" placeholder="LastName" required="" autofocus="" />
+        <input asp-for="Email" type="text" class="form-control" name="Email" placeholder="Email" required="" autofocus="" />
+        <input asp-for="UserName" type="text" class="form-control" name="username" placeholder="UserName" required="" autofocus="" />
+        <input asp-for="Password" type="password" class="form-control" name="password" placeholder="Password" required="" />
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>
+</div>
