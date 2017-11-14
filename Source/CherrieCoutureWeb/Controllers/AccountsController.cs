@@ -14,6 +14,7 @@ using Newtonsoft.Json;
 using CherrieCoutureWeb.APIGateway.ResponseModels;
 using System.Web;
 using System.Net.Http;
+using System.Net;
 
 namespace CherrieCoutureWeb.Controllers
 {
@@ -47,7 +48,8 @@ namespace CherrieCoutureWeb.Controllers
 						{
 							new Claim(ClaimTypes.Name, response.LoggedOnUser.FirstName),
 							new Claim(ClaimTypes.Surname , response.LoggedOnUser.LastName),
-							new Claim(ClaimTypes.Email , response.LoggedOnUser.Email)
+							new Claim(ClaimTypes.Email , response.LoggedOnUser.Email),
+							new Claim(ClaimTypes.UserData , response.LoggedOnUser.UserName)
 						};
 
 					if (response.LoggedOnUser.UserName == "administrator")
@@ -58,6 +60,9 @@ namespace CherrieCoutureWeb.Controllers
 					var claimsIdentity = new ClaimsIdentity(
 						claims,
 						CookieAuthenticationDefaults.AuthenticationScheme);
+
+					HttpContext.Response.Cookies.Append("username", model.UserName);
+
 
 					await HttpContext.SignInAsync(
 						CookieAuthenticationDefaults.AuthenticationScheme,
@@ -87,18 +92,25 @@ namespace CherrieCoutureWeb.Controllers
 		{
 			if (model != null)
 			{
-				var result = _apiGateway.PostAsJsonAsync<HttpResponseMessage>("login/register", model).Result;
+				var result = _apiGateway.PostAsJsonAsync<object>("login/register", model).Result;
 
-				if (result.IsSuccessStatusCode)
-				{
 					var claims = new List<Claim>
 						{
 							new Claim(ClaimTypes.Name, model.FirstName),
 							new Claim(ClaimTypes.Surname , model.LastName),
-							new Claim(ClaimTypes.Email , model.Email)
+							new Claim(ClaimTypes.Email , model.Email),
+							new Claim(ClaimTypes.UserData , model.UserName),
 						};
 
-					if (model.UserName == "administrator")
+				Cookie userCookie = new Cookie
+				{
+					Name = "username",
+					Value = model.UserName
+				};
+
+				HttpContext.Response.Cookies.Append("username" , model.UserName);
+
+				if (model.UserName == "administrator")
 					{
 						claims.Add(new Claim(ClaimTypes.Role, "Admin"));
 					}
@@ -113,11 +125,6 @@ namespace CherrieCoutureWeb.Controllers
 
 					return RedirectToAction("Index" , "Home");
 
-				}
-				else
-				{
-					return View();
-				}
 			}
 			else
 			{
@@ -129,7 +136,7 @@ namespace CherrieCoutureWeb.Controllers
 		{
 		
 			Response.Cookies.Delete(".AspNetCore.Cookies");
-
+			Response.Cookies.Delete("username");
 			return RedirectToAction("Login" , "Accounts");
 		}
 

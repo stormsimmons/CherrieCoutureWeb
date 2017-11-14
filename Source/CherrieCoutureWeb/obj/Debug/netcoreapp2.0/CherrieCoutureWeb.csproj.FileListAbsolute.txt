@@ -9,3 +9,14 @@ c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutu
 c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.AssemblyInfo.cs
 c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.dll
 c:\users\storm.simmons\Documents\PersonalWorkpace\CherrieCoutureWeb\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.pdb
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.deps.json
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.runtimeconfig.json
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.runtimeconfig.dev.json
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.dll
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\bin\Debug\netcoreapp2.0\CherrieCoutureWeb.pdb
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.csprojResolveAssemblyReference.cache
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.csproj.CoreCompileInputs.cache
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.AssemblyInfoInputs.cache
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.AssemblyInfo.cs
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.dll
+C:\Users\storm.simmons\Documents\Personal GitHub\CherrieCoutureWeb\Source\CherrieCoutureWeb\obj\Debug\netcoreapp2.0\CherrieCoutureWeb.pdb

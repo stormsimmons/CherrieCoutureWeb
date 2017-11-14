@@ -42,8 +42,26 @@ namespace CherrieCoutureWeb.Controllers
 			var image = Request.Form.Files[0];
 
 			var target = Path.GetFullPath("../CherrieCoutureWeb/wwwroot/images/products/");
+			var targetFiles = Directory.GetFiles(target);
+
 			var filePath = Path.Combine(target, image.FileName);
-			image.CopyTo(new FileStream(filePath, FileMode.Create));
+			bool fileExists = false;
+			foreach (var file in targetFiles)
+			{
+				if (file == filePath)
+				{
+					fileExists = true;
+					break;
+				}
+				else
+				{
+					fileExists = false;
+				}
+			}
+			if (fileExists == false)
+			{
+				image.CopyTo(new FileStream(filePath, FileMode.Create));
+			}
 
 			product.ImageUrl = image.FileName;
 
@@ -82,6 +100,30 @@ namespace CherrieCoutureWeb.Controllers
 		[HttpPost]
 		public IActionResult Update(Product product)
 		{
+			var image = Request.Form.Files[0];
+
+			var target = Path.GetFullPath("../CherrieCoutureWeb/wwwroot/images/products/");
+			var targetFiles = Directory.GetFiles(target);
+
+			var filePath = Path.Combine(target, image.FileName);
+			 bool fileExists = false;
+			foreach (var file in targetFiles)
+			{
+				if (file == filePath)
+				{
+					fileExists = true;
+					break;
+				}
+				else
+				{
+					fileExists = false;
+				}
+			}
+			if (fileExists == false)
+			{
+				image.CopyTo(new FileStream(filePath, FileMode.Create));
+			}
+			product.ImageUrl = image.FileName;
 			var response = _apiGateway.PostAsJsonAsync<object>("product/update", product).Result;
 
 			return RedirectToAction("Index", "Product");
